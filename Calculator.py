@@ -9,6 +9,7 @@ def Division(num1,num2):
     return num1/num2
 def Modulas(num1,num2):
     return num1%num2
+    
 Operator = inquirer.select(
         message="=$= Select a Operator =$=",
         choices= ["+","-","/","*","%"],
