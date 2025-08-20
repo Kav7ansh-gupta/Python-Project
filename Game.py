@@ -14,34 +14,23 @@ while Exit == True:
             ).execute()
         CompDict = { -1: "Rock" , 0 : "Paper" , 1 : "Scissors"}
         CompChoice = CompDict[computer]
+        print(f"Your choice {choice}!")
+        print(f"Computer choice {CompChoice}!")
+        
         if (CompChoice == choice):
-            print(f"Your choice {choice}!")
-            print(f"Computer choice {CompChoice}!")
             print("Draw !!!")
         elif(CompChoice!=choice):
             if (computer == -1 and choice == "Scissors" ):
-                print(f"Your choice {choice}!")
-                print(f"Computer choice {CompChoice}!")
                 print("You losee !!!")
             elif(computer == -1 and choice == "Paper"):
-                print(f"Your choice {choice}!")
-                print(f"Computer choice {CompChoice}!")
                 print("You Win !!!")
             elif(computer == 0 and choice == "Scissors"):
-                print(f"Your choice {choice}!")
-                print(f"Computer choice {CompChoice}!")
                 print("You Win !!!")
             elif(computer == 0 and choice == "Rock"):
-                print(f"Your choice {choice}!")
-                print(f"Computer choice {CompChoice}!")
                 print("You losee !!!")
             elif(computer == 1 and choice == "Paper"):
-                print(f"Your choice {choice}!")
-                print(f"Computer choice {CompChoice}!")
                 print("You losee !!!")
             elif(computer == 1 and choice == "Rock"):
-                print(f"Your choice {choice}!")
-                print(f"Computer choice {CompChoice}!")
                 print("You Win !!!")
             else:
                 print("something went wrong!! ")
