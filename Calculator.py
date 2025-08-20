@@ -8,9 +8,12 @@ def Division(num1,num2):
     return num1/num2
 def Modulas(num1,num2):
     return num1%num2
-
+from InquirerPy import inquirer
+Operator = inquirer.select(
+        message="=$= Select a Operator =$=",
+        choices= ["+","-","/","*","%"],
+    ).execute()
 num1=int(input("Enter the number 1 : "))
-Operator = str(input("Enter the Operator : "))
 num2=int(input("Enter the number 2 : "))
 
 match Operator:
