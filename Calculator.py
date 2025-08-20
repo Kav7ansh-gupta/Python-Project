@@ -1,4 +1,14 @@
 from InquirerPy import inquirer
+def addition(num1,num2):
+    return num1+num2
+def Subtraction(num1,num2):
+    return num1-num2
+def Multiplication(num1,num2):
+    return num1*num2
+def Division(num1,num2):
+    return num1/num2
+def Modulas(num1,num2):
+    return num1%num2
 Operator = inquirer.select(
         message="=$= Select a Operator =$=",
         choices= ["+","-","/","*","%"],
@@ -26,14 +36,3 @@ match Operator:
         print("Not valid operator")
 
 
-
-def addition(num1,num2):
-    return num1+num2
-def Subtraction(num1,num2):
-    return num1-num2
-def Multiplication(num1,num2):
-    return num1*num2
-def Division(num1,num2):
-    return num1/num2
-def Modulas(num1,num2):
-    return num1%num2
